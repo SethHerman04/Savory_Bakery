@@ -128,14 +128,17 @@ function addItemsArray (index) {
 }
 
 function displayPlaceOrderButton(show) {
+    let display;
+
     if (show == true) {
         buttonPlaceOrder.style.display = "block";
-        cartEmpty.innerHTML = " ";
+        display = " ";
     }
     else {
         buttonPlaceOrder.style.display = "none";
-        cartEmpty.innerHTML = "<p>Nothing currently in your cart</p>";
+        display = "<p>Nothing currently in your cart</p>";
     }
+    cartEmpty.innerHTML = display;
 }
 
 function displayItem (itemsIndex, cartIndex, removeItem) {

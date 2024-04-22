@@ -269,6 +269,38 @@ article img {
     color: #3d2006;
 }
 
+article div p {
+    text-align: center;
+    font-family: arial;
+    color: #826040; 
+}
+
+#placeOrder {
+    display: flex;
+    justify-content: center;
+}
+
+#buttonPlaceOrder {
+    width: 25%;
+    background-color: #fce0a7;
+    font-size: 3em;
+    font-family: arial;
+    color:#3d2006;
+    margin-top: 1em;
+    display: none;
+}
+
+#total {
+    text-align: center;
+    font-size: 2em;
+    font-family: arial;
+    color:#66472a
+}
+
+#buttonPlaceOrder:hover {
+    background-color: #fdd380;
+}
+
 /* Cart Page Flex */
 .cart {
     display: flex;

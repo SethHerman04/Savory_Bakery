@@ -19,7 +19,7 @@ const CART_PRICES = [3.00, 5.00, 6.00, 6.00, 6.50, 7.50, 2.00, 3.00, 4.00, 4.00,
 const CART_BUTTONS = ["removeBaguette", "removeSourdough", "removeHoneyOat", "removeRye", "removeMultigrain",
         "removeChallah", "removeHamantaschen", "removeChocolat", "removeBearClaw", "removeDanish", 
         "removeChocolateChip", "removeOatmealRaisin", "removeSnickerdoodle", "removePeanutButter",
-        "removeKeyLime", "removeAppleCrumble", "removeBlueberryLattice", "removePecan"]
+        "removeKeyLime", "removeAppleCrumble", "removeBlueberryLattice", "removePecan"];
 
 // Declare arrays
 const orderItems = new Array(18);
@@ -48,6 +48,7 @@ const cart16 = document.getElementById("cart16");
 const cart17 = document.getElementById("cart17");
 const buttonPlaceOrder = document.getElementById("buttonPlaceOrder");
 const total = document.getElementById("total");
+const cartEmpty = document.getElementById("cartEmpty");
 
 // Add button declarations
 const buttonBaguette = document.getElementById("buttonBaguette");
@@ -129,10 +130,11 @@ function addItemsArray (index) {
 function displayPlaceOrderButton(show) {
     if (show == true) {
         buttonPlaceOrder.style.display = "block";
+        cartEmpty.innerHTML = " ";
     }
     else {
         buttonPlaceOrder.style.display = "none";
-        cart0.innerHTML = "<p>Nothing currently in your cart</p>";
+        cartEmpty.innerHTML = "<p>Nothing currently in your cart</p>";
     }
 }
 

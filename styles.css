@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+/* Main Stage */
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+}
+
+#sidebar-img-left {
+    background-image: url("Images/BreadBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#sidebar-img-right {
+    background-image: url("Images/BreadBackground.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+body {
+    background-color: #feeece;
+    margin: 0 0;
+}
+
+article {
+    flex-grow: 1;
+}
+
+
+
+/* Header */
+
+header {
+    background-color: #66472a;
+}
+
+#header-part1 img {
+    width: 15em;
+    height: auto;
+    object-fit: contain;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#header-part1 h1 {
+    width: 200%;
+    font-size: 8em;
+    text-align: center;
+    color: #79400b;
+    font-family: arial;
+}
+
+#header-part1 {
+    background-color: #feeece;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 1.5em;
+}
+
+nav ul li a {
+    color: #d07f28;
+    font-size: 2em;
+    font-family: arial;
+}
+
+nav ul li:hover {
+    background-color: #826040;
+}
+
+
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #66472a;
+}
+
+footer ul li {
+    padding: 1em;
+    color: #d07f28;
+    font-family: arial;
+}
+
+footer ul li a:hover {
+    color: #feeece;
+}
+
+footer ul li a {
+    color: #d07f28;
+    font-family: arial;
+}
+
+
+
+/* General */
+
+a {
+    text-decoration: none;
+}
+
+
+/* Home Page Article */
+
+article img {
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+}
+
+.home-flex {
+    display: flex;
+    border: 0.5em solid #79400b;
+}
+
+.home-flex img{
+    width: 20em;
+}
+
+.home-flex h2 {
+    padding: 1em;
+    color: #d07f28;
+    font-size: 2em;
+    font-family: arial;
+    text-align: center;
+}
+
+.home-flex:hover {
+    background-color: #66472a;
+}
+
+
+
+/* About Page Grid */
+
+#about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5em;
+    padding: 2em;
+}
+
+#about-grid aside {
+    background-color: #66472a;
+    padding: 1em;
+    color: #dca264;
+    font-family: arial;
+}
+
+#about-grid aside li {
+    list-style: none;
+    line-height: 2em;
+}
+
+#about-grid aside h3 {
+    color: #d07f28;
+}
+
+#about-grid aside a {
+    color: #dca264;
+}
+
+#about-grid aside a:hover {
+    color: #d07f28;
+}
+
+#about-grid article {
+    color: #79400b;
+    font-family: arial;
+    font-size: 1.3em
+}
+
+#about-grid article h2 {
+    color: #3d2006;
+    font-size: 2em;
+}
+
+/* Menu Page */
+.menuTitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: arial;
+    color: #3d2006;
+}
+
+/* Menu Page Flex */
+
+.menu {
+    display: flex;
+    border: 0.5em solid #79400b;
+}
+
+.menu img {
+    width: 15em;
+    border-top: none;
+    border-right: 0.5em solid #79400b;
+    border-bottom: none;
+    border-left: none;
+}
+
+.menu div {
+    flex-grow: 1;
+    flex-basis: 100px;
+    color: #79400b;
+    padding: 0 0 0 1em;
+}
+
+.menu div h3 {
+    color: #3d2006;
+    font-size: 1.5em;
+}
+
+.menu .price {
+    width: 20%;
+    text-align: center;
+    font-size: 2em;
+    font-family: arial;
+    color: #d07f28;
+    flex-grow: 0;
+}
+
+.menu button {
+    background-color: #fce0a7;
+    width: 6em;
+    flex-grow: 0;
+}
+
+.menu button:hover {
+    background-color: #fdd380;
+}
+
+/* Cart Page */
+#cartTitle {
+    text-align: center;
+    font-size: 3em;
+    font-family: arial;
+    color: #3d2006;
+}
+
+/* Cart Page Flex */
+.cart {
+    display: flex;
+    border: 0.5em solid #79400b;
+}
+
+.cart img {
+    width: 15em;
+    border-top: none;
+    border-right: 0.5em solid #79400b;
+    border-bottom: none;
+    border-left: none;
+}
+
+.cart h3 {
+    flex-grow: 1;
+    flex-basis: 100px;
+    color: #3d2006;
+    font-size: 2.5em;
+    padding: 0 0 0 1em;
+}
+
+.cart p {
+    width: 20%;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: arial;
+    color: #d07f28;
+    flex-grow: 0;
+}
+
+.cart button {
+    background-color: #fce0a7;
+    width: 6em;
+    flex-grow: 0;
+}
+
+.cart button:hover {
+    background-color: #fdd380;
+}

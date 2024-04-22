@@ -132,7 +132,7 @@ function displayPlaceOrderButton(show) {
 
     if (show == true) {
         buttonPlaceOrder.style.display = "block";
-        display = " ";
+        display = "<p></p>";
     }
     else {
         buttonPlaceOrder.style.display = "none";
@@ -148,7 +148,7 @@ function displayItem (itemsIndex, cartIndex, removeItem) {
 
     // Assign display
     if (removeItem == true) {
-        display = " ";
+        display = "<p></p>";
     }
     else {
         display =   "<div class=\"cart\">" +

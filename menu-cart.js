@@ -128,17 +128,14 @@ function addItemsArray (index) {
 }
 
 function displayPlaceOrderButton(show) {
-    let display;
-
     if (show == true) {
         buttonPlaceOrder.style.display = "block";
-        display = "<p></p>";
+        cartEmpty.innerHTML = " ";
     }
     else {
         buttonPlaceOrder.style.display = "none";
-        display = "<p>Nothing currently in your cart</p>";
+        cartEmpty.innerHTML = "<p>Nothing currently in your cart</p>";
     }
-    cartEmpty.innerHTML = display;
 }
 
 function displayItem (itemsIndex, cartIndex, removeItem) {
@@ -148,7 +145,7 @@ function displayItem (itemsIndex, cartIndex, removeItem) {
 
     // Assign display
     if (removeItem == true) {
-        display = "<p></p>";
+        display = " ";
     }
     else {
         display =   "<div class=\"cart\">" +
